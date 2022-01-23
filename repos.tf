@@ -1,7 +1,7 @@
 module "repo_symbols" {
   source      = "./modules/repo"
   name        = "symbols"
-  description = "Unofficial symbol libraries for KiCad 6."
+  description = "Symbol libraries for KiCad 6."
 
   topics = [
     "kicad",
@@ -18,7 +18,7 @@ module "repo_symbols" {
 module "repo_footprints" {
   source      = "./modules/repo"
   name        = "footprints"
-  description = "Unofficial footprint libraries for KiCad 6."
+  description = "Footprint libraries for KiCad 6."
 
   topics = [
     "kicad",
@@ -35,7 +35,7 @@ module "repo_footprints" {
 module "repo_bom" {
   source      = "./modules/repo"
   name        = "bom"
-  description = "Unofficial BOM generator plugins for KiCad 6."
+  description = "BOM generation plugins for KiCad 6."
 
   topics = [
     "kicad",
