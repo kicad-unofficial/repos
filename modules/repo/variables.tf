@@ -22,15 +22,17 @@ variable "license" {
   nullable    = false
 }
 
+variable "license_addendum" {
+  description = "Additional text to append to the LICENSE file"
+  type        = string
+  default     = ""
+}
+
 variable "copyright" {
   description = "Information about the copyright notice to include in the LICENSE file"
   type = object({
     since   = string,
-    holders = optional(list(string))
+    holders = optional(list(string), [])
   })
   nullable = false
-}
-
-locals {
-  copyright = defaults(var.copyright, {})
 }
